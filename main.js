@@ -1,0 +1,1 @@
+document.getElementsByClassName("center").namedItem.name = "test"
