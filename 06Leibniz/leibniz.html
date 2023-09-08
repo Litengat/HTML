@@ -2,21 +2,24 @@
     <head>
         <title>Gottfried Wilhelm Leibniz</title>
         <style>
+            /*
             div {
                 border: 1px solid red;
             }
             p {
                 border: 1px solid blue;
             }
+            */
             .Gottfried {
                 display: flex;
                 width: 50%;
             }
             .Gottfried > img {
-            width: auto; 
-            height: auto; 
-            max-height: 200px;
+                width: auto; 
+                height: auto; 
+                max-height: 200px;
             }
+            
             .Gottfried > div {
                 border: 10px solid transparent ;
             }
@@ -31,9 +34,10 @@
             .Maschine > div {
                 border: 10px solid transparent ;
             }
-            .Maschine > div > p {
-                border: 10px solid transparent ;
+            .reihe > img {
+                float: right;
             }
+            
             
         </style>
     </head>
@@ -82,17 +86,18 @@
 
 
 
-       
-        <img src="leibnizreihe.png">
+       <div class="reihe">
+            <p>
+                Diese Formel ist m&auml;chtig kompliziert und wird auch nur im Leistungskurs Mathematik durchgenommen. Sie basiert auf dem Satz von Taylor, aber das ist ein ganz anderer Mathematiker
+            </p>
 
-<p>
-    Diese Formel ist m&auml;chtig kompliziert und wird auch nur im Leistungskurs Mathematik durchgenommen. Sie basiert auf dem Satz von Taylor, aber das ist ein ganz anderer Mathematiker
-</p>
-<p>
-    Ich hoffe, ihr habt was Interessantes &uuml;ber den Namenspatron unserer Schule gelernt und dass mit Bildern der Text nicht mehr so langweilig ist :-)
-</p>
-<p>
-    <tt>Quellen: Die Bilder f&uuml;r diese HTML-Seite sind von der Wikipedia. Der Text ist von Herrn Langenohl.</tt>
-</p>
+            <p>
+                Ich hoffe, ihr habt was Interessantes &uuml;ber den Namenspatron unserer Schule gelernt und dass mit Bildern der Text nicht mehr so langweilig ist :-)
+            </p>
+            <img src="leibnizreihe.png">
+       </div>
+        <p>
+            <tt>Quellen: Die Bilder f&uuml;r diese HTML-Seite sind von der Wikipedia. Der Text ist von Herrn Langenohl.</tt>
+        </p>
     </body>
 </html> 
