@@ -4,19 +4,21 @@ function addElement() {
     const stunden = ["Latein","Mathe","Englisch","Chemie","Erdkunde","Musik","Informatik",""]
     const newtable = document.createElement("tabele");
     const Tage = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"]
-    var newtb = document.createElement("th");
+    var newth = document.createElement("tr");
     for (let i = 0; i < 5; i++) { 
-        var newtd = document.createElement("td")
-        newtb.appendChild(newtd);
+        var newtd = document.createElement("th");
+        var newContent = document.createTextNode(Tage[i]);
+        newtd.appendChild(newContent);
+        newth.appendChild(newtd);
     }
-    newtable.appendChild(newtb);
+    newtable.appendChild(newth);
 
 
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
         var newtr = document.createElement("tr");
-        for(let i = 0;i < 6;i++){
-            var newtd = document.createElement("td");"
+        for(let i = 0;i < 5;i++){
+            var newtd = document.createElement("td");
             var newContent = document.createTextNode(stunden[getRandomInt(stunden.length)]);
             console.log(newContent);
             newtd.appendChild(newContent);
