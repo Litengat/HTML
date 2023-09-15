@@ -1,8 +1,8 @@
 document.body.onload = addElement();
 
 function addElement() {
-    const stunden = ["Latein","Mathe","Englisch","Chemie","Erdkunde","Musik","Informatik",""]
-    const newtable = document.createElement("tabele");
+    const stunden = ["Latein","Mathe","Englisch","Chemie","Erdkunde","Musik","Informatik"," "]
+    const newtabel = document.createElement("table")
     const Tage = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"]
     var newth = document.createElement("tr");
     for (let i = 0; i < 5; i++) { 
@@ -11,7 +11,7 @@ function addElement() {
         newtd.appendChild(newContent);
         newth.appendChild(newtd);
     }
-    newtable.appendChild(newth);
+    newtabel.appendChild(newth);
 
 
 
@@ -19,24 +19,22 @@ function addElement() {
         var newtr = document.createElement("tr");
         for(let i = 0;i < 5;i++){
             var newtd = document.createElement("td");
-            var newContent = document.createTextNode(stunden[getRandomInt(stunden.length)]);
+            var stunde = stunden[getRandomInt(stunden.length)];
+            var newContent = document.createTextNode(stunde);
             console.log(newContent);
+            newtd.setAttribute("id",stunde)
             newtd.appendChild(newContent);
             newtr.appendChild(newtd)
         }
-        newtable.appendChild(newtr);
+        newtabel.appendChild(newtr);
     }
-    newtable.appendChild(document.createElement("tr"))
-
-
-
-    newtable.setAttribute("id", "plan")
-    const currentDiv = document.getElementById("plan");
-    console.log(currentDiv)
-    document.body.insertBefore(newtable, currentDiv);
-    document.getElementById("plan").setAttribute("border","1")
+    newtabel.appendChild(document.createElement("tr"))
+    document.getElementById("plan").replaceWith(newtabel)
 }
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
+}
+class stunde {
+    
 }
