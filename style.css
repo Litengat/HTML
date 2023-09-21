@@ -1,0 +1,15 @@
+div {
+    border: 1px solid blue;
+}
+p {
+    border: 1px solid red;
+}
+img {
+    border: 1px solid orange;
+}
+* {
+    border: 1px solid green;
+}
+div {
+    width: 100px;
+}
