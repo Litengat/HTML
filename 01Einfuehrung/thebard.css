@@ -1,0 +1,58 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #fafafa;
+    background-image: black;
+}
+
+
+
+h1 {
+    font-size:36px;
+    font-family:'Franklin Gothic Medium';
+    
+}
+
+h2 {
+    font-size:20px;
+    font-style: italic;
+    font-family:'Gill Sans';
+}
+
+a {
+    color:#E3F199;
+    font-family: serif;
+}
+
+a:hover {
+    font-family:'Lucida Sans';
+    font-weight:bold;
+    font-size:16px;
+    color:#00ff00;
+    text-decoration: underline overline
+}
+    
+div.Author {
+    font-family: 'Segoe UI';
+    border: ridge;
+    border-color: yellow;
+    width: 500px;
+    height: 200px;
+    margin-left:auto;
+    margin-right:415px;
+    margin-top: -225px;
+    background: darkgreen;
+}
+
+.Quelle > p {
+    
+}
+
+
+
+.Quelle:hover{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
